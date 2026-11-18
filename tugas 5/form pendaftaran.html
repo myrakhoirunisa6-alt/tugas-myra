@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran</title>
+</head>
+<body>
+  <h3>Form Pendaftaran</h3>
+  <form>
+    <fieldset>
+      <legend>Pendaftaran siswa</legend><br>
+      <label for="name"> Nama lengkap:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required><br><br>
+
+      <label for="NIS">NIS:</label>
+      <input type="text" id="NIS" name="NIS" placeholder="Masukkan NIS" required><br><br>
+
+      <label>Jenis Kelamin</label>
+      <input type="radio" name="jk" value="L" id="laki">
+      <label for="laki">Laki-Laki</label>
+      <input type="radio" name="jk" value="P" id="perempuan">
+      <label for="perempuan">Perempuan</label><br><br>
+
+      <label for="Tanggal">Tanggal Lahir:</label>
+      <input type="date" name="Tanggal" id="Tanggal"><br><br>
+
+      <label for="jurusan">pilihan jurusan</label>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">--Pilih jurusan--</option>
+        <option value="TSM">Teknik Sepeda Motor [TSM]</option>
+        <option value="PPLG">Perkembangan Perangkat Lunak dan Gim [PPLG]</option>
+        <option value="TKJ">Teknik Komputer & Jaringan</option>
+      </select><br><br>
+
+      <label for="Alamat">Alamat:</label><br>
+      <textarea name="Alamat" id="Alamat" rows="4" cols="40" placeholder="Masukkan alamat lengkap "></textarea><br><br>
+
+      <label for="Foto">Foto:</label>
+      <input type="file" id="image" name="Foto" accept="image"><br><br>
+      <input type="checkbox" name="setuju" id="setuju" value="saya menyetujui data yang saya masukan">
+      <label for="setuju">saya menyetujui data yang saya masukan</label><br><br>
+
+      <input type="submit" value="Daftar" formaction="table.html">
+      <input type="reset" value="Reset">
+      
+    </fieldset>
+  </form>
+</body>
+</html>
